@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+    
+    
+        
+        .container{
+            display: grid;
+             grid-template-columns: repeat(3,auto); 
+            grid-template-rows: repeat(3,0fr);
+            border: 1px solid;
+             width: 1140px; 
+            background:#eee;
+             margin: auto;
+            height: 550px;
+            gap: 10px;
+        
+        }
+        
+         .photo1{
+            width: 358px;
+         height: 150px; 
+         }
+        .photo2{
+            width: 358px;
+        height: 150px;
+            
+        } 
+        .photo3{
+            width:727px;
+             height: 180px;
+              
+        }  
+        .photo4{
+            width: 727px;
+            height: 180px; 
+        } 
+        .photo5{
+            width: 400px;
+             height: 345px;
+        }
+        .photo6{
+            width: 400px;
+             height: 180px;
+        }
+            
+            
+        
+         .one{
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+            
+        }
+        .two{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        
+            
+            grid-row-start:1 ;
+        }
+        .three{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            
+            grid-row-start: 2;
+        }
+        .four{
+            
+            grid-column-start: 1;
+            grid-column-end: 3;
+            
+            grid-row-start: 3;
+        }
+        .five{
+            grid-column-start: 3;
+            grid-column-end: 4;
+           
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .six{
+            grid-column-start: 3;
+            grid-column-end: 4;
+           
+            grid-row-start: 3;
+        } 
+        
+        
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="one"><img src="gp2.jpeg " class="photo1"></div>
+        <div class="two"><img src="st1.jpeg" class="photo2"></div>
+
+      <div class="three"><img src="mng2.jpeg" class="photo3"></div>
+      <div class="four"><img src="or1.jpeg" class="photo4"></div>
+      <div class="five"><img src="pa.jpeg"class="photo5"></div>
+      <div class="six"><img src="kiwi.jpeg"class="photo6"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display: flex;
+            text-align: center;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #happy{
+             flex-grow:1;
+             order: 2;
+            
+        }
+        #sad{
+            order: 3;
+            flex-grow: 10;
+        }
+        #confused{
+            order: 1;
+            flex-grow: 3;
+        }
+        #happy,#sad,#confused{
+    height:350px;
+    background-color:#369;
+    border:5px;
+    border-color:#000;
+    border-style: solid;
+    margin-right:5px;
+        }
+        article{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-direction: row;
+        }
+        article #cool{
+            order: 2;
+            flex-grow: 3;
+        }
+        article #warm{
+            order: 1;
+            flex-grow: 5;
+        }
+        article #hot{
+            order: 3;
+            flex-grow: 1;
+        }
+        article #warm,#cool,#hot{
+        display: block;
+        background-color: aqua;
+        border: .8em .8em .8em .8em;
+        border-style: solid;
+
+       }
+        #warm:hover{
+            background-color: coral;
+        }
+        #cool:hover{
+            background-color: coral;
+        }
+        #hot:hover{
+            background-color: coral;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+   <div id="happy"><p>happy</p></div> 
+   <div id="sad"><p>sad</p></div>
+   <div id="confused"><p>confused</p></div>
+   </main>
+   <br>
+   <article>
+    <div id="cool" ><p>cool</p></div>
+    <div id="warm" ><p>warm</p></div>
+    <div id="hot"  ><p>hot</p></div>
+   </article>
+</body>
+</html>

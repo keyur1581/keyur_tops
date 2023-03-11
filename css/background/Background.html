@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper div{
+            height: 200px;
+            margin: 20px;
+            border: 15px dotted rgb(175, 206, 64);
+        }
+        .background-color{
+            background-color: brown;
+        }
+        .background-image{
+            background-image:url(img.jpeg) ;
+    
+        }    
+        
+        .background-repeat{
+            background-repeat:repeat-x;
+            background-color: rgb(126, 43, 119);
+            background-image:url(img.jpeg) ;
+            
+
+        }
+        .background-attachment{
+            background-image:url(img.jpeg) ;
+            background-repeat: repeat-y;
+            background-attachment: fixed;
+        }
+        .background-clip{
+            background-clip: content-box;
+            background-image:url(img.jpeg) ;
+            padding: 20px;
+        }
+        .background-origin{
+            background-origin: border-box;
+            background-image:url(img.jpeg) ;
+            padding: 20px;
+
+        }
+        .background-position{
+            background-image:url(img.jpeg) ;
+            padding: 20px;
+            background-position: center 60%;
+            background-repeat: no-repeat;
+            
+        }
+        .background-size{
+            background-size: contain;
+            background-image:url(img.jpeg) ;
+           background-repeat: no-repeat;
+        }
+        .background-shorthand{
+            background:url(img.jpeg) no-repeat center center  /cover fixed;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li> background-color</li>
+        <li> background-image</li>
+        <li> background-repeat</li>
+        <li> background-attachment</li>
+        <li> background-clip</li>
+        <li> background-origin</li>
+        <li> background-position</li>
+        <li> background-size</li>
+    </ul>
+    <div class="wrapper">
+
+        <div class="background-color">
+            <h2>background-color</h2>
+        </div>
+        <div class="background-image">
+            <h2>background-image</h2>
+        </div>
+        <div class="background-repeat">
+            <h2>background-repeat</h2>
+        </div>
+        <div class="background-attachment">
+            <h2>background-attachment</h2>
+        </div>
+        <div class="background-clip">
+            <h2>background-clip</h2>
+        </div>
+        <div class="background-origin">
+            <h2>background-origin</h2>
+        </div>
+        <div class="background-position">
+            <h2>background-position</h2>
+        </div>
+        <div class="background-size">
+            <h2>background-size</h2>
+        </div>
+        <div class="background-shorthand">
+            <h2>background-shorthand</h2>
+        </div>
+    </div>
+</body>
+</html>

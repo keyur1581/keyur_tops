@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      background: black;
+      box-sizing: border-box;
+    }
+
+    .container { 
+      width: 100%;
+      display: grid;
+      grid-gap: 10px;
+      margin: 0 auto;
+      grid-template-columns: repeat(3,1fr);
+      grid-auto-rows: minmax(100px,auto);
+      
+    }
+    .container>div{
+      border: 2px solid;
+      
+    }
+
+    img{
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+    .one{
+    grid-column: 1/3;
+    grid-row: 1;
+    }
+    .two{
+      grid-column: 3/4;
+      grid-row: 1;
+     
+    }
+    .three{
+      grid-column:1/2;
+      grid-row: 2;
+    }
+    .four{
+      grid-column: 2/3;
+      grid-row: 2;
+     
+    }
+    .five{
+      grid-column: 3/4;
+      grid-row: 2;
+    }
+    .six{
+      grid-column: 1/2;
+      grid-row: 3;
+    }
+    .seven{
+      grid-column-start:3/4;
+      grid-row: 3;
+      
+    }
+    
+
+   
+
+  </style>
+</head>
+
+<body>
+   <div class="container">
+    <div class="one"><img src="ladakh.jpeg"></div>
+    <div class="two"><img src="manali.jpeg"></div>
+    <div class="three"><img src="kedarnath.jpeg"></div>
+    <div class="four"><img src="rajsthan.jpeg"></div>
+    <div class="five"><img src="kutch.jpeg" ></div>
+    <div class="six"><img src="kerla.jpeg" ></div>
+    <div class="seven"><img src="dubai.jpeg"></div>
+  </div> 
+
+  
+</body>
+
+</html>

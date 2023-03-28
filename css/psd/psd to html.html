@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .num {
+            margin: 44px 3px -10px 999px;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+            width: 1200px;
+        }
+
+        .navbar {
+            margin: 0 -72px 0 0;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 12px;
+            line-height: 50px;
+            font-family: "Bebas Neue";
+            color: black;
+        }
+
+        .burgur {
+            height: 350px;
+            width: 500px;
+            line-height: 50px;
+            margin: 43px 108px 0 0;
+        }
+
+        .sec-one {
+            background-image: url(Rectangle.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .text {
+            margin: 0 0 60px 62px;
+            line-height: 100px;
+            text-transform: uppercase;
+            font-family: 'M PLUS Rounded 1c';
+        }
+
+        .text h1 {
+            font-size: 130px;
+            font-weight: 300;
+            filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
+            line-height: 50px;
+        }
+
+        .text h2 {
+            font-size: 77px;
+            font-weight: 100;
+            filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
+            margin: 0 320px 0 0;
+            line-height: 130px;
+        }
+
+        .row {
+            display: flex;
+            
+        }
+ 
+        .jus {
+            justify-content: space-between;
+            margin-left: 45px;
+        }
+
+        .cart {
+            margin: 458px 0 0 -1063px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cart img {
+            width: 100%;
+        }
+
+
+        .cart h3 {
+            font-size: 29px;
+            line-height: 52px;
+            text-transform: uppercase;
+            color: #3d2514;
+            font-weight: 600;
+            font-family: "Bebas Neue";
+            text-align: center;
+        }
+
+        .cart p {
+            font-size: 17px;
+            line-height: 24px;
+            color: #3d2514;
+            font-weight: 400;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        .cart button {
+            width: 292px;
+            height: 51px;
+            background-color: #bf2222;
+            font-size: 16px;
+            line-height: 35px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: bolder;
+            font-family: "Alfa Slab One";
+            margin: 11px 0 0 37px;
+        }
+
+        .col-30 {
+            width: 30%;
+        }
+        .col-30 img{
+            height: 250px;
+        }
+
+        .col-50 {
+            width: 50%;
+            margin-left: 20px;
+            margin-top: 40px;     
+
+        }
+
+        .sect_tow {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .pad {
+            padding: 0 0 0 60px;
+        }
+
+        .pad2 {
+            padding: 0 0 0 20px;
+        }
+
+        .imge1 {
+            padding: 0 0 30px 0;
+        }
+
+        .container2 {
+            line-height: 20px;
+        }
+
+        .menu h2 {
+            text-align: center;
+            font-family: 'Alfa Slab One';
+            font-size: 80px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #3d2514;
+            font-weight: 800;
+            
+            margin-right:9px;
+        }
+
+        .menu h3 {
+            font-size: 49px;
+            letter-spacing: 2px;
+            line-height: 46px;
+            text-transform: uppercase;
+            color: #3d2514;
+            font-weight: 500;
+            font-family: 'Alfa Slab One';
+            text-align: center;
+            margin-left: -57px;
+        }
+
+        .sect_three {
+             padding: 0 0 80px 0;
+
+        }
+
+        .sect_three_text {
+            width: 100%;
+        }
+
+        .sect_three_text h2 {
+            font-size: 38px;
+            /* line-height: 38px; */
+            text-transform: uppercase;
+            color: #3d2514;
+            font-weight: 700;
+            font-family: "Bebas Neue";
+            margin-top: 100px;
+            background-color: #ffc045;
+            text-align: center;
+            margin-left: 265px;
+
+        }
+
+        .sect_three_text h3 {
+            font-size: 85px;
+            line-height: 138px; 
+            text-transform: uppercase;
+            color: #3d2514;
+            font-weight: 400;
+            font-family: "Alfa Slab One";
+            margin-left: 318px;
+        }
+
+        .sect_three_text p {
+           width: 107%; 
+            font-size: 28px;
+            color: #3d2514;
+            font-weight: 400;
+            font-family: "Montserrat";
+            text-align: center;
+            margin-left: 100px;
+            
+
+        }
+
+        .col-50 h4 {
+            font-size: 34px;
+            letter-spacing: 2px;
+            line-height: 100px;
+            text-transform: uppercase;
+            color: #3d3d3d;
+            font-weight: 400;
+            font-family: 'Bebas Neue';
+            margin-top:23px ;
+
+        }
+
+         .col-50 h5 {
+            font-size: 55px;
+            line-height: 46px;
+            text-transform: uppercase;
+            color: #3d2514;
+            font-weight: bolder;
+            font-family: "Alfa Slab One";
+            margin-top: -24px;
+
+        }
+
+        .sec-four-para {
+            width: 564px;
+            margin-top: 30px;
+            font-size: 21px;
+            line-height: 33px;
+            color: #3d3d3d;
+            font-weight: 900 bolder;
+            font-family: "Montserrat";
+        } 
+
+        .sect_five {
+            padding: 100px 0 100px 0;
+        }
+        .container1{
+             height: 600px; 
+        }
+
+        .table{
+          margin: 84px 171px 1px 449px; 
+          
+        }
+        
+        .container5{
+            height: 400px;
+        }
+        .tablebtn{
+            width: 292px;
+            height: 51px;
+            background-color: #bf2222;
+            font-size: 18px;
+            line-height: 35px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: bolder;
+            font-family: "Alfa Slab One";
+            margin: 11px 0 0 37px;
+        }
+        
+      
+        
+    </style>
+</head>
+
+<body>
+    <section class="sec-one">
+
+        <header>
+            <img src="Vector Smart Object.png " class="num">Express Delivery +1 234 567 890
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png">
+                </div>
+                <nav class="navbar">
+
+                                <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="#">OUR STORY</a></li>
+                        <li><a href="#">CONTECT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container1">
+                <div class="row" style="display: flex; justify-content: space-around;">
+                    <div class="col-6">
+                        <div class=" text" style="margin-top: 100px;">
+                            <P>It is a good time for the great taste of burgers</P>
+                            <h1>BURGAR</h1>
+                            <H2>WEEK</H2>
+                        </div>
+                    </div>
+                    <div class=" col-6">
+                        <img src="Drinks.png" class="burgur">
+                         <!-- <img src="prizetag.png" class="prize"> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+    </section>
+    <section>
+        <div class="container">
+            <div class="sect_tow pad">
+                <div class="col-50">
+                    <img src="Burger Image.png" alt="">
+                </div>
+                <div class="col-50 pad2">
+                    <img src="Image.png" class="imge1" alt="">
+                    <img src="Image (1).png" alt="">
+                </div>
+            </div>
+    </section>
+     <section class="sect_three"> 
+        <div class="container">
+         <div class="sect_three_text"> 
+                    <h2>ALWAYS TASTY BURGUR</h2>
+                    <h3>CHOOSE & ENJOY</h3>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                     labore Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, sit.</P>              
+             </div> 
+            <div class="cart">
+                <div class="row jus">
+                    <div class="col-30">
+                        <img src="Bu1.png">
+                        <h3>LOREM IPSUM DOLOR</h3>
+                        <P>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do</P>
+                        <button>ORDER NOW</button>
+                    </div>
+                    <div class="col-30">
+                        <img src="Bu2.png">
+                        <h3>LOREM IPSUM DOLOR</h3>
+                        <P>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do</P>
+                        <button>ORDER NOW</button>
+                    </div>
+                    <div class="col-30">
+                        <img src="Bu3.png">
+                        <h3>LOREM IPSUM DOLOR</h3>
+                        <P>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do</P>
+                        <button>ORDER NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <section >
+        <div class="container">
+            <div class="row jus">
+                <div class="col-50 sec_four ">
+                    <h4>Discover</h4>
+                    <h5>Upcoming Events</h5>
+                    <p class="sec-four-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                </div>
+            </div>
+            <div class="col-50">
+                <img src="bu4.png" class="bu4" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="sect_five">
+        <div class="container5">
+            <div class="menu">
+                <h3>RESRVATION</h3>
+                <h2>BOOK YOUR TABLE</h2>
+            </div> 
+                <div class="table">
+                 <table>
+                    <tr>
+                   <td> <input type="text" id="name" placeholder="NAME"></td>
+                   <td> <input type="text" id="date" placeholder="DATE"></td>
+                    </tr> 
+                    <tr>
+                   <td> <input type="text" id="text" placeholder="PEOPLE"></td>
+                  <td> <input type="text" id="EMAIL" placeholder="EMAIL"></td>
+                  </tr> 
+                   <tr> 
+                    <td><input type="text" id="TIME" placeholder="TIME"></td>
+                    <td><button class="tablebtn">FIND THE TABLE</button></td>
+                    </tr>        
+            </table>                          
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section>
+        <!-- <div class="last-sec row jus">
+            <div class="col-50">
+                <div class="logo"><img src="Logo2.png"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viver ra maecenas
+                    accumsan
+                    lacus vel facilisis. </p>
+                <p>© Company Name 2020. All rights reserved.</p>
+            </div>
+            <div class="col-50">
+                <div class="icons">
+                    <img src="Location Icon.png"> Main Road, Building Name, Country<br>
+                    <img src="Email.png"> info@companyname.com
+                </div>
+                <div class="icon"><img src="Icon.png"></div>
+            </div>
+        </div> -->
+        <img src="Group 6.png">
+    </section>
+</body>
+
+</html>

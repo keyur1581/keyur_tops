@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider-img {
+            width: 400px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="slider-img" src="pexels-img1.webp" alt="">
+    <img class="slider-img" src="pexels-img2.webp" alt="">
+    <img class="slider-img" src="pexels-img3.jpeg" alt="">
+    <img class="slider-img" src="pexels-img4.webp" alt="">
+    <img class="slider-img" src="pexels-img5.jpeg" alt="">
+
+    <script>
+        SliderImgs = document.getElementsByClassName("slider-img")
+        console.log(SliderImgs);
+        var counter = 0;
+        function Slider(params) {
+            console.log(counter);
+            for (let index = 0; index < SliderImgs.length; index++) {
+                // const element = SliderImgs[index];
+                console.log(SliderImgs[index]);
+                SliderImgs[index].style.display = "none"
+            }
+            SliderImgs[counter].style.display = "block"
+            counter++
+
+
+            if (counter == 5) {
+             counter = 0
+            }
+            // setInterval(Slider, 2000);
+            setTimeout(Slider,2000)
+        }
+        Slider()
+    </script>
+
+</body>
+
+</html>
